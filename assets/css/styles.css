@@ -1,13 +1,13 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+/*===== VARIAVEIS CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
+  /*===== Cores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
-  --hue-color: 224;
+  /* HSL modo de cor */
+  --hue-color: 201;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fonte e tipografia =====*/
@@ -80,11 +80,11 @@ img {
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
-
+  text-decoration: none;
 }
 
-
-.section-title::after {
+/*===== LINHA ABAIXO PARA DIVISAO  ===== */
+/* .section-title::after {
   position: absolute;
   content: '';
   width: 64px;
@@ -94,7 +94,8 @@ img {
   margin: auto;
   top: 2rem;
   background-color: var(--first-color);
-}
+  text-decoration: none;
+} */
 
 .section {
   padding-top: 3rem;
@@ -115,7 +116,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -242,6 +243,11 @@ img {
   height: 500px;  
 }
 
+
+
+
+
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -324,15 +330,15 @@ img {
 }
 
 .skills__html {
-  width: 80%;
+  width: 0%;
 }
 
 .skills__css {
-  width: 80%;
+  width: 0%;
 }
 
 .skills__js {
-  width: 50%;
+  width: 0%;
 }
 
 
@@ -342,11 +348,21 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
+  position:relative;
+  left: 430px;
   row-gap: 2rem;
 }
 
+.descricao_projeto {
+  margin-bottom: var(--mb-2);
+  position: relative;
+  left: 23%;
+  font-size: 100%;
+  font-family: var(--font-semi);
+}
+
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.10);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -359,28 +375,7 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
-
-/* ===== FOOTER =====*/
+/* ===== rodapé =====*/
 .footer {
   background-color: var(--second-color);
   color: #fff;
