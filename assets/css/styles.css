@@ -384,6 +384,8 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+
+
 /* ===== MEDIA QUERIES=====*/
 
 @media screen and (max-width: 920px) {
@@ -439,6 +441,7 @@ img {
     padding-bottom: 3rem;
   }
   .section-title {
+    text-align: center;
     margin-bottom: var(--mb-6);
   }
   .section-title::after {
@@ -451,6 +454,7 @@ img {
   .nav__list {
     display: flex;
     padding-top: 0;
+    text-align: center;
   }
   .nav__item {
     margin-left: var(--mb-6);
@@ -477,7 +481,7 @@ img {
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 0rem;
     align-items: center;
     text-align: initial;
   }
