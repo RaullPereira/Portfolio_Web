@@ -206,9 +206,8 @@ img {
 }
 
 .home__social {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  display: inline;
+  text-align: center;
 }
 
 .home__social-icon {
@@ -216,25 +215,15 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: #fff;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: #00a6ff;
 }
-
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-}
-
-
-.home__blob-img {
-  width: 560px;
-  height: 500px;  
-}
-
 
 /*BUTTONS*/
 .button {
@@ -251,6 +240,7 @@ img {
 
 
 .button:hover {
+  background-color: #0087cf;
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
@@ -396,13 +386,7 @@ img {
 
 /* ===== MEDIA QUERIES=====*/
 
-@media all and (max-width: 768px) {
-  .about__text{
-   overflow:auto; 
-  }
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 920px) {
   .home {
     row-gap: 2rem;
   }
@@ -411,16 +395,15 @@ img {
   }
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 460px) {
   .home {
     padding: 4rem 0 2rem;
   }
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
-    flex-direction: row;
-    display: flex;
-    align-self: center;
+    flex-direction: column;
+    align-self: flex-end;
   }
   .home__social-icon {
     margin-bottom: 0;
@@ -443,17 +426,16 @@ img {
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    padding-top: -3rem;
-    
+    padding-top: 2rem;
   }
 }
 
-@media screen and (min-width: 260px) {
+@media screen and (min-width: 0px) {
   body {
     margin: 0;
   }
   .section {
-    padding-top: 2;
+    padding-top: 4rem;
     padding-bottom: 3rem;
   }
   .section-title {
@@ -464,11 +446,11 @@ img {
     top: 3rem;
   }
   .nav {
-    height: calc(var(--header-height) + 2.5rem);
+    height: calc(var(--header-height) + 1.5rem);
   }
   .nav__list {
     display: flex;
-    padding-top: 2;
+    padding-top: 0;
   }
   .nav__item {
     margin-left: var(--mb-6);
@@ -478,7 +460,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: #00a6ff;
   }
   .home {
     padding: 8rem 0 2rem;
@@ -503,18 +485,9 @@ img {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
-
-  .footer__title {
-    padding-top: 4rem;
-    font-size: 2;
-  }
-
-  .footer p {
-    font-size: 20px;
-  }
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 992px) {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
