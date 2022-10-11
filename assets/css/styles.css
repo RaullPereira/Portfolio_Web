@@ -36,7 +36,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -73,7 +73,6 @@ img {
 }
 
 
-/*===== CLASS CSS ===== */
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -89,13 +88,14 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+
 .bd-grid {
   max-width: 1024px;
   display: grid;
   justify-content: center;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+
 }
 
 .l-header a{
@@ -271,6 +271,12 @@ img {
 
 .about__text {
   color: #fff;
+  text-align: justify;
+}
+
+.text-group {
+  position: relative;
+  right: 5.4rem;
 }
 
 .about__img img {
@@ -293,14 +299,13 @@ img {
 .skills__data {
   background-color: #242322;
   display: flex;
-  align-content: center;
   justify-content: space-between;
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 10rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
@@ -312,24 +317,19 @@ img {
 
 .skills__names {
   color: #fff;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
 }
 
-
-/* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;  
+  row-gap: 2rem;
 }
 
-/*.work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.10);
-  border-radius: 0.5rem;
+.work__img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: .5rem;
   overflow: hidden;
-  width: 15rem;
-} */
-
+}
 
 .work__img img {
   transition: 1s;
@@ -338,6 +338,7 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
 
 
 .contact__input {
