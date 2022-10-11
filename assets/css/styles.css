@@ -392,10 +392,6 @@ img {
   .home {
     row-gap: 2rem;
   }
-  .work__container{
-    width: max-content;
-  }
-
 }
 
 @media screen and (min-width: 460px) {
@@ -430,6 +426,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
+    text-align: center;
   }
 }
 
